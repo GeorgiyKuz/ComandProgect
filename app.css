@@ -1,17 +1,20 @@
+* {
+  margin: 0;
+}
+
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
 
 .container {
-    margin: 0px 388px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1130px;
 }
 
 .header {
     background: #fff;
-    width: 1380px;
-    height: 100px;
-    flex-shrink: 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,13 +22,16 @@ body {
 .header-line {
     background-color: #fff;
     padding-top: 40px;
+    padding-bottom: 40px;
+    margin-right: -200px;
+    margin-left: 5px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
 }
 
 .header-logo {
-    margin-left: 150px;
+    margin-right: 35px;
 }
 
 .number {
@@ -70,18 +76,15 @@ body {
 .helimain {
     background-image: url(image/fon.jpg);
     position: relative;
-    width: 1663px;
-    height: 790px;
+    height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .helimain-title {
     padding-top: 280px;
-    margin-left: -50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     display: grid;
 }
 
@@ -636,9 +639,7 @@ body {
 .maps {
     background-image: url(image/map.jpg);
     margin: 50px 0px;
-    position: absolute;
-    width: 1685px;
-    height: 475px;
+    height: 52vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -656,7 +657,7 @@ body {
 .map-1{
     display: flex;
     margin: 5px 30px;
-
+    align-items: center;
 }
 
 .map-text-1 {
@@ -690,6 +691,7 @@ body {
 .map-2{
     display: flex;
     margin: 5px 30px;
+    align-items: center;
 }
 
 .map-text-2 {
@@ -718,6 +720,7 @@ body {
 .map-3{
     display: flex;
     margin: 5px 30px;
+    align-items: center;
 }
 
 .map-text-3 {
@@ -746,6 +749,8 @@ body {
 .map-avatar{
     display: flex;
     margin: 0px 30px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .avatar {
@@ -779,7 +784,6 @@ body {
     font-style: normal;
     text-decoration: none;
     font-weight: 500;
-    line-height: 151.156%;
 }
 
 .btn:hover{
@@ -787,8 +791,7 @@ body {
 }
 
 .reviews {
-    margin-top: 635px;
-    margin-left: -58px;
+    margin-top: 100px;
 }
 
 .reviews-title {
