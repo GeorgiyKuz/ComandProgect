@@ -1,61 +1,102 @@
 <!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="form.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bronirovanie</title>
-</head>
-<body>
-    <div class="contact-wrapper">
-        <header class="login-cta">
-          <h2>Account Login</h2>
-        </header>
-        <form>
-            <div class="form-date">
-                <input type="text" required>
-                <span>14.09.2019</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Бронирование</header>
+      <form action="#" class="form">
+        <div class="column">
+            <div class="input-box">
+              <label>Дата*</label>
+              <input type="date" placeholder="Enter date" required />
             </div>
-            <div class="form-date">
-                <input type="text" required>
-                <span>Username or Email</span>
-            </div>
-            <div class="form-row">
-                <input type="text" required>
-                <span>Name</span>
-            </div>
-            <div class="form-date">
-                <input type="text" required>
-                <span>Surname</span>
-            </div>
-            <div class="form-date">
-                <input type="text" required>
-                <span>Phone</span>
-            </div>
-            <div class="form-date">
-                <input type="text" required>
-                <span>Username or Email</span>
-            </div>
-            <div class="form-row">
-                <input type="password" required>
-                <span>Password</span>
-            </div>
-            <div class="form-row"></div>
-            <div class="form-row">
-                <button type="submit">Login to your Account!</button>
-            </div>
-        </form>
-        <div class="socials-wrapper">
-            <header>
-                <h2>Login with your Social Account</h2>     
-            </header>
-            <ul>
-                <li><a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="twitch"><i class="fab fa-twitch"></i></a></li>
-                <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
-            </ul>
         </div>
-    </div>
-</body>
+        <div class="input-box">
+            <label>Email*</label>
+            <input type="text" placeholder="Enter email address" required />
+        </div>
+        <div class="input-box">
+          <label>Имя*</label>
+          <input type="text" placeholder="Enter name" required />
+        </div>
+        <div class="input-box">
+            <label>Фамилия*</label>
+            <input type="text" placeholder="Enter surname" required />
+        </div>
+        <div class="input-box">
+            <label>Телефон*</label>
+            <input type="text" placeholder="Enter phone" required />
+        </div>
+        <div class="input-box">
+            <label>Данные карты*</label>  
+            <div class="details">
+                <div>
+                    <span>Card Holder</span>
+                    <span id="card-holder-name">Your Name Here</span>
+                </div>
+                <div>
+                    <span>Expires</span>
+                    <span id="validity">06/28</span>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="black-strip"></div>
+                    <div class="white-strip">
+                        <span>CVV</span>
+                        <div id="cvv-display"></div>
+                    </div>
+                    <img src="visa.png" class="visa-logo" />
+                </div>
+            </div>
+            <form>
+                <label for="card-number">Номер карты:</label>
+                <input type="number" id="card-number" placeholder="***" />
+                <div class="date-cvv">
+                    <div>
+                    <label for="validity">Срок действия:</label>
+                    <input type="date" id="validity-input" />
+                    </div>
+                    <div>
+                    <label for="cvv">CVV:</label>
+                    <input type="number" id="cvv" placeholder="***" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form button">
+            <button>Забронировать</button>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
